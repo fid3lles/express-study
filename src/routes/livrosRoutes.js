@@ -8,8 +8,8 @@ router
     .get("/livros/busca", LivroController.listLivroByEditora)
     .get("/livros/:id", LivroController.getLivroById)
     .post("/livros", LivroController.createLivro)
-    .put("/livros/:id", LivroController.updateLivro);
-    //.delete("/livros/:id",  LivroController.deleteLivroByid);
+    .put("/livros/:id", LivroController.updateLivro)
+    .delete("/livros/:id",  LivroController.deleteLivroById);
 
     //delete não está funcionando, erro de callback
 export default router;

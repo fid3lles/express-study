@@ -7,7 +7,7 @@ router
     .get("/autores", AutoresController.getAllAutores)
     .get("/autores/:id", AutoresController.getAutorById)
     .post("/autores", AutoresController.createAutor)
-    .put("/autores/:id", AutoresController.updateAutor);
-    //.delete("/autores/:id",  AutoresController.deleteAutorByid);
+    .put("/autores/:id", AutoresController.updateAutor)
+    .delete("/autores/:id",  AutoresController.deleteAutorById);
 
 export default router;
